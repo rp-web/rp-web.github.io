@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .input{
+            padding: 3px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            height: 20px;
+        }
+    </style>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Topics</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="register.html">Sing up/Log in</a></li>
+        <li><a href="#">About us</a></li>
+    </ul><br><hr>
+    <!--This is a note-->
+    <!-- Press ctrl + / to do a comment on vs code, this could be a usefull keyboard shortcut  -->
+    <!-- In this an exemple we're using GET but never user for personal data it'll show on URL -->
+    <form action="#" method="GET">
+        <input class="input" type="text" id="fname" value="" name="Fname" placeholder="Fisrt Name">
+        <input class="input" type="text" id="lname" value="" name="Lname" placeholder="Last Name"><br>
+        <input class="input" type="email" id="email" value="" name="Email" placeholder="Your Email" required style="width: 368px;"><br>
+        <input class="input" type="password" id="password" value="" name="Password" placeholder="Password" min="6"><br>
+        <input class="input" type="tel" id="tel" value="" name="tnumber" placeholder="F. Number"><br>
+        Gender:<br>
+        <label for="male">
+            <input id="male" type="radio" value="Male" name="gender">Male
+        </label>
+        <label for="female">
+            <input id="female" type="radio" value="Female" name="gender">Female
+        </label>
+        <label for="other">
+            <input id="other" type="radio" value="Other" name="gender">Other
+        </label><br>
+        <p style="margin-bottom: 3px;">Checkbox test:</p>
+        <label for="op1">
+            <input id="op1" type="checkbox" value="Option1" name="checkb">Option1
+        </label>
+        <label for="op2">
+            <input id="op2" type="checkbox" value="Option2" name="checkb"> Option2
+        </label>
+        <label for="op3">
+            <input id="op3" type="checkbox" value="Option3" name="checkb">Option3
+        </label><br>
+        <input type="submit" style="margin-top: 10px;">
+        <input type="reset" style="margin-top: 3px;">
+    </form><hr>   
+</body>
+</html>
